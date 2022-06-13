@@ -6,7 +6,6 @@ pageObjects\user\Company.class
 tests\usersTests\GetResponseFromUsersWithQueryParamTest.class
 utils\PropertyManager.class
 tests\postsTests\PostDataTest.class
-tests\usersTests\user.class
 tests\postsTests\GetResponseFromPostsWithQueryParamTest.class
 utils\TextGenerator.class
 pageObjects\user\Address.class

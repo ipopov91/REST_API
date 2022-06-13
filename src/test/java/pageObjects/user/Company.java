@@ -25,8 +25,7 @@ public class Company {
     private String catchPhrase;
     @JsonProperty("bs")
     private String bs;
-    @JsonIgnore
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+
 
     /**
      * No args constructor for use in serialization
@@ -78,14 +77,6 @@ public class Company {
         this.bs = bs;
     }
 
-    @JsonAnyGetter
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
 
-    @JsonAnySetter
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
-    }
 
 }
