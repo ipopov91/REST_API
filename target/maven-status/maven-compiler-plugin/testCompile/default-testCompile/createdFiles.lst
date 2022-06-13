@@ -1,0 +1,15 @@
+utils\Specifications.class
+tests\usersTests\GetResponseUsersTest.class
+pageObjects\user\User.class
+tests\postsTests\GetResponseFromPostsTest.class
+pageObjects\user\Company.class
+tests\usersTests\GetResponseFromUsersWithQueryParamTest.class
+utils\PropertyManager.class
+tests\postsTests\PostDataTest.class
+tests\usersTests\user.class
+tests\postsTests\GetResponseFromPostsWithQueryParamTest.class
+utils\TextGenerator.class
+pageObjects\user\Address.class
+pageObjects\post\Post.class
+pageObjects\user\Geo.class
+tests\postsTests\GetResponseFromPostsWithIncorrectDataTest.class

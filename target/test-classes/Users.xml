@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="UsersSuite">
+    <parameter name="idParameter" value="id"/>
+    <parameter name="idValue" value="5"/>
+    <test name="CASE5">
+        <classes>
+            <class name="tests.usersTests.GetResponseUsersTest"/>
+        </classes>
+    </test>
+    <test name="CASE6">
+        <classes>
+            <class name="tests.usersTests.GetResponseFromUsersWithQueryParamTest"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-06-13T05:59:14 MSK" name="UsersSuite" finished-at="2022-06-13T05:59:14 MSK" duration-ms="326">
+    <groups>
+    </groups>
+    <test started-at="2022-06-13T05:59:14 MSK" name="CASE5" finished-at="2022-06-13T05:59:14 MSK" duration-ms="157">
+      <class name="tests.usersTests.GetResponseUsersTest">
+        <test-method signature="getResponseUsers()[pri:0, instance:tests.usersTests.GetResponseUsersTest@6eda5c9]" started-at="2022-06-13T05:59:14 MSK" name="getResponseUsers" finished-at="2022-06-13T05:59:14 MSK" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResponseUsers -->
+      </class> <!-- tests.usersTests.GetResponseUsersTest -->
+    </test> <!-- CASE5 -->
+    <test started-at="2022-06-13T05:59:14 MSK" name="CASE6" finished-at="2022-06-13T05:59:14 MSK" duration-ms="167">
+      <class name="tests.usersTests.GetResponseFromUsersWithQueryParamTest">
+        <test-method signature="getResponseFromUsersWithQueryParam(java.lang.String,int)[pri:0, instance:tests.usersTests.GetResponseFromUsersWithQueryParamTest@6973b51b]" started-at="2022-06-13T05:59:14 MSK" name="getResponseFromUsersWithQueryParam" finished-at="2022-06-13T05:59:14 MSK" duration-ms="167" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResponseFromUsersWithQueryParam -->
+      </class> <!-- tests.usersTests.GetResponseFromUsersWithQueryParamTest -->
+    </test> <!-- CASE6 -->
+  </suite> <!-- UsersSuite -->
+  <suite started-at="2022-06-13T05:59:14 MSK" name="APITests" finished-at="2022-06-13T05:59:14 MSK" duration-ms="0">
+    <groups>
+    </groups>
+  </suite> <!-- APITests -->
+  <suite started-at="2022-06-13T05:59:11 MSK" name="PostsSuite" finished-at="2022-06-13T05:59:14 MSK" duration-ms="2742">
+    <groups>
+    </groups>
+    <test started-at="2022-06-13T05:59:11 MSK" name="CASE1" finished-at="2022-06-13T05:59:13 MSK" duration-ms="1713">
+      <class name="tests.postsTests.GetResponseFromPostsTest">
+        <test-method signature="getResponseFromPosts(java.lang.String)[pri:0, instance:tests.postsTests.GetResponseFromPostsTest@48e4374]" started-at="2022-06-13T05:59:11 MSK" name="getResponseFromPosts" finished-at="2022-06-13T05:59:13 MSK" duration-ms="1692" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResponseFromPosts -->
+      </class> <!-- tests.postsTests.GetResponseFromPostsTest -->
+    </test> <!-- CASE1 -->
+    <test started-at="2022-06-13T05:59:13 MSK" name="CASE2" finished-at="2022-06-13T05:59:13 MSK" duration-ms="198">
+      <class name="tests.postsTests.GetResponseFromPostsWithQueryParamTest">
+        <test-method signature="getResponseFromPostsWithQueryParam(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.postsTests.GetResponseFromPostsWithQueryParamTest@619713e5]" started-at="2022-06-13T05:59:13 MSK" name="getResponseFromPostsWithQueryParam" finished-at="2022-06-13T05:59:13 MSK" duration-ms="196" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[99]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[title]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[body]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[userId]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[99]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResponseFromPostsWithQueryParam -->
+      </class> <!-- tests.postsTests.GetResponseFromPostsWithQueryParamTest -->
+    </test> <!-- CASE2 -->
+    <test started-at="2022-06-13T05:59:13 MSK" name="CASE3" finished-at="2022-06-13T05:59:13 MSK" duration-ms="205">
+      <class name="tests.postsTests.GetResponseFromPostsWithIncorrectDataTest">
+        <test-method signature="getResponseFromPostsWithIncorrectData(java.lang.String)[pri:0, instance:tests.postsTests.GetResponseFromPostsWithIncorrectDataTest@291ae]" started-at="2022-06-13T05:59:13 MSK" name="getResponseFromPostsWithIncorrectData" finished-at="2022-06-13T05:59:13 MSK" duration-ms="205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[150]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResponseFromPostsWithIncorrectData -->
+      </class> <!-- tests.postsTests.GetResponseFromPostsWithIncorrectDataTest -->
+    </test> <!-- CASE3 -->
+    <test started-at="2022-06-13T05:59:13 MSK" name="CASE4" finished-at="2022-06-13T05:59:14 MSK" duration-ms="600">
+      <class name="tests.postsTests.PostDataTest">
+        <test-method signature="postAdd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,int)[pri:0, instance:tests.postsTests.PostDataTest@1ea9f6af]" started-at="2022-06-13T05:59:13 MSK" name="postAdd" finished-at="2022-06-13T05:59:14 MSK" duration-ms="599" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[title]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[body]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[userId]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[id]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[101]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postAdd -->
+      </class> <!-- tests.postsTests.PostDataTest -->
+    </test> <!-- CASE4 -->
+  </suite> <!-- PostsSuite -->
+</testng-results>
