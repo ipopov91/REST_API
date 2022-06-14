@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-
-<suite name="APITests" parallel="false" thread-count="2">
-    <suite-files>
-        <suite-file path="Posts.xml"/>
-        <suite-file path="Users.xml"/>
-    </suite-files>
-</suite>
