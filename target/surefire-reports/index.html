@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">3 suites</span>
+      <span class="top-banner-font-1">3 suites, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-UsersSuite" class="navigator-link">
-              <span class="suite-name border-passed">UsersSuite</span>
+              <span class="suite-name border-failed">UsersSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-UsersSuite" class="hide-methods failed suite-UsersSuite"> (hide)</a> <!-- hide-methods failed suite-UsersSuite -->
+                      <a href="#" panel-name="suite-UsersSuite" class="show-methods failed suite-UsersSuite"> (show)</a> <!-- show-methods failed suite-UsersSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-UsersSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-UsersSuite" title="tests.usersTests.GetResponseUsersTest" class="method navigator-link" hash-for-method="getResponseUsers(pageObjects.user.User@6403a4a5, 4)">getResponseUsers(pageObjects.user.User@6403a4a5, 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-UsersSuite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -105,11 +119,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-UsersSuite" title="tests.usersTests.GetResponseFromUsersWithQueryParamTest" class="method navigator-link" hash-for-method="getResponseFromUsersWithQueryParam(id, 5)">getResponseFromUsersWithQueryParam(id, 5)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-UsersSuite" title="tests.usersTests.GetResponseUsersTest" class="method navigator-link" hash-for-method="getResponseUsers(pageObjects.user.User@6403a4a5, 5)">getResponseUsers(pageObjects.user.User@6403a4a5, 5)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-UsersSuite -->
@@ -218,22 +227,28 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-UsersSuite" class="panel UsersSuite">
-          <div class="suite-UsersSuite-class-passed">
+          <div class="suite-UsersSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">tests.usersTests.GetResponseUsersTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="getResponseUsers(pageObjects.user.User@6403a4a5, 5)">
-                  </a> <!-- getResponseUsers(pageObjects.user.User@6403a4a5, 5) -->
+                  <a name="getResponseUsers(pageObjects.user.User@6403a4a5, 4)">
+                  </a> <!-- getResponseUsers(pageObjects.user.User@6403a4a5, 4) -->
                   <span class="method-name">getResponseUsers</span>
-                  <span class="parameters">(pageObjects.user.User@6403a4a5, 5)</span>
+                  <span class="parameters">(pageObjects.user.User@6403a4a5, 4)</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [{&quot;id&quot;:4,&quot;name&quot;:&quot;Patricia Lebsack&quot;,&quot;username&quot;:&quot;Karianne&quot;,&quot;email&quot;:&quot;Julianne.OConner@kory.org&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Hoeger Mall&quot;,&quot;suite&quot;:&quot;Apt. 692&quot;,&quot;city&quot;:&quot;South Elvis&quot;,&quot;zipcode&quot;:&quot;53919-4257&quot;,&quot;geo&quot;:{&quot;lat&quot;:&quot;29.4572&quot;,&quot;lng&quot;:&quot;-164.2990&quot;}},&quot;phone&quot;:&quot;493-170-9623 x156&quot;,&quot;website&quot;:&quot;kale.biz&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Robel-Corkery&quot;,&quot;catchPhrase&quot;:&quot;Multi-tiered zero tolerance productivity&quot;,&quot;bs&quot;:&quot;transition cutting-edge web services&quot;}}] but found [{&quot;id&quot;:5,&quot;name&quot;:&quot;Chelsey Dietrich&quot;,&quot;username&quot;:&quot;Kamren&quot;,&quot;email&quot;:&quot;Lucio_Hettinger@annie.ca&quot;,&quot;address&quot;:{&quot;street&quot;:&quot;Skiles Walks&quot;,&quot;suite&quot;:&quot;Suite 351&quot;,&quot;city&quot;:&quot;Roscoeview&quot;,&quot;zipcode&quot;:&quot;33263&quot;,&quot;geo&quot;:{&quot;lat&quot;:&quot;-31.8129&quot;,&quot;lng&quot;:&quot;62.5342&quot;}},&quot;phone&quot;:&quot;(254)954-1289&quot;,&quot;website&quot;:&quot;demarco.info&quot;,&quot;company&quot;:{&quot;name&quot;:&quot;Keebler LLC&quot;,&quot;catchPhrase&quot;:&quot;User-centric fault-tolerant solution&quot;,&quot;bs&quot;:&quot;revolutionize end-to-end systems&quot;}}]
+	at tests.usersTests.GetResponseUsersTest.getResponseUsers(GetResponseUsersTest.java:46)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-UsersSuite-class-passed -->
+          </div> <!-- suite-UsersSuite-class-failed -->
           <div class="suite-UsersSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -507,16 +522,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'getResponseUsers')
 data.setCell(0, 2, 'tests.usersTests.GetResponseUsersTest')
-data.setCell(0, 3, 507);
+data.setCell(0, 3, 515);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'getResponseFromUsersWithQueryParam')
 data.setCell(1, 2, 'tests.usersTests.GetResponseFromUsersWithQueryParamTest')
-data.setCell(1, 3, 334);
+data.setCell(1, 3, 240);
 window.suiteTableData['UsersSuite']= { tableData: data, tableDiv: 'times-div-UsersSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 841 ms</span>
+              <span class="suite-total-time">Total running time: 755 ms</span>
               <div id="times-div-UsersSuite">
               </div> <!-- times-div-UsersSuite -->
             </div> <!-- times-div -->
@@ -565,19 +580,19 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'getResponseFromPosts')
 data.setCell(0, 2, 'tests.postsTests.GetResponseFromPostsTest')
-data.setCell(0, 3, 2011);
+data.setCell(0, 3, 2000);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'postAdd')
 data.setCell(1, 2, 'tests.postsTests.PostDataTest')
-data.setCell(1, 3, 775);
+data.setCell(1, 3, 794);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'getResponseFromPostsWithQueryParam')
 data.setCell(2, 2, 'tests.postsTests.GetResponseFromPostsWithQueryParamTest')
-data.setCell(2, 3, 510);
+data.setCell(2, 3, 496);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'getResponseFromPostsWithIncorrectData')
 data.setCell(3, 2, 'tests.postsTests.GetResponseFromPostsWithIncorrectDataTest')
-data.setCell(3, 3, 396);
+data.setCell(3, 3, 437);
 window.suiteTableData['PostsSuite']= { tableData: data, tableDiv: 'times-div-PostsSuite'}
 return data;
 }
@@ -638,7 +653,9 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">tests.usersTests.GetResponseUsersTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">getResponseUsers(pageObjects.user.User@6403a4a5, 5)</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getResponseUsers(pageObjects.user.User@6403a4a5, 4)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
@@ -646,7 +663,7 @@ return data;
               <div class="chronological-class-name">tests.usersTests.GetResponseFromUsersWithQueryParamTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getResponseFromUsersWithQueryParam(id, 5)</span>
-                <span class="method-start">507 ms</span>
+                <span class="method-start">536 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -673,21 +690,21 @@ return data;
               <div class="chronological-class-name">tests.postsTests.GetResponseFromPostsWithQueryParamTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getResponseFromPostsWithQueryParam(99, title, body, id, userId, 99, 10)</span>
-                <span class="method-start">2042 ms</span>
+                <span class="method-start">2031 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.postsTests.GetResponseFromPostsWithIncorrectDataTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">getResponseFromPostsWithIncorrectData(150)</span>
-                <span class="method-start">2552 ms</span>
+                <span class="method-start">2527 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.postsTests.PostDataTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">postAdd(title, body, userId, id, 1, 101, 10)</span>
-                <span class="method-start">2948 ms</span>
+                <span class="method-start">2964 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -23,12 +23,11 @@ import static utils.Specifications.USER_PATH;
  */
 public class GetResponseUsersTest {
 
-    @Test(dataProvider = "parameterIntTestProvider")
+    @Test(dataProvider = "parameterTestProvider")
     public void getResponseUsers(User userFive, int idValue) throws IOException {
 
         SoftAssert softAssert = new SoftAssert();
         Specifications.installSpecification(Specifications.requestSpec(), Specifications.responseSpecificationOk());
-
 
         ObjectMapper mapper = new ObjectMapper();
         String jsonStringExpected = mapper.writeValueAsString(userFive);
@@ -47,9 +46,8 @@ public class GetResponseUsersTest {
         softAssert.assertAll();
     }
 
-
     @DataProvider
-    public Object[][] parameterIntTestProvider() {
+    public Object[][] parameterTestProvider() {
 
         User userFive = new User(5,"Chelsey Dietrich", "Kamren", "Lucio_Hettinger@annie.ca",
                 new Address("Skiles Walks", "Suite 351", "Roscoeview", "33263",
