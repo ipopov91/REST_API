@@ -25,7 +25,11 @@ public class PostDataTest {
                          int userId, int id, int randomStringValue) {
         SoftAssert softAssert = new SoftAssert();
         Specifications.installSpecification(Specifications.requestSpec(), Specifications.responseSpecificationCreate());
-        post = new Post(randomString(randomStringValue),randomString(randomStringValue),userId,id);
+        post = new Post();
+        post.setTitle(randomString(randomStringValue));
+        post.setBody(randomString(randomStringValue));
+        post.setUserId(userId);
+        post.setId(id);
 
          Response response = given()
                 .body(post)

@@ -1,17 +1,15 @@
 package tests.usersTests;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pageObjects.user.Address;
 import pageObjects.user.Company;
 import pageObjects.user.Geo;
 import pageObjects.user.User;
-import utils.PropertyManager;
 import utils.Specifications;
 
-import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -25,27 +23,14 @@ import static utils.Specifications.USER_PATH;
  */
 public class GetResponseUsersTest {
 
-    public final static String USER_EXP_PATH_JSON = PropertyManager.getProperty("pathExpectedUser");
-    public final static String USER_ACT_PATH_JSON = PropertyManager.getProperty("pathActualUser");
-
-    @Parameters({"idValue","nameValue","userName","emailValue","streetValue","suiteValue","cityValue","zipcodeValue","latValue",
-            "lngValue","phoneValue","websiteValue","companyNameValue","catchPhraseValue","bsValue"})
-    @Test
-    public void getResponseUsers(int idValue, String nameValue,String  userName,String emailValue,
-                                 String streetValue, String suiteValue, String cityValue, String zipcodeValue, String latValue,
-                                 String lngValue, String phoneValue, String websiteValue, String companyNameValue,
-                                 String catchPhraseValue, String bsValue) throws IOException {
+    @Test(dataProvider = "parameterIntTestProvider")
+    public void getResponseUsers(User userFive, int idValue) throws IOException {
 
         SoftAssert softAssert = new SoftAssert();
         Specifications.installSpecification(Specifications.requestSpec(), Specifications.responseSpecificationOk());
 
-        User userFive = new User(idValue,nameValue, userName, emailValue,
-                new Address(streetValue, suiteValue, cityValue, zipcodeValue,
-                        new Geo(latValue, lngValue)),phoneValue, websiteValue,
-                new Company(companyNameValue, catchPhraseValue, bsValue));
 
         ObjectMapper mapper = new ObjectMapper();
-        mapper.writeValue(new File(USER_EXP_PATH_JSON), userFive);
         String jsonStringExpected = mapper.writeValueAsString(userFive);
 
         List<User> res = given()
@@ -56,9 +41,23 @@ public class GetResponseUsersTest {
 
         List<User> neededUser = res.stream().filter(x->x.getId().equals(idValue)).collect(Collectors.toList());
 
-        mapper.writeValue(new File(USER_ACT_PATH_JSON), neededUser.get(0));
         String jsonStringActual = mapper.writeValueAsString(neededUser.get(0));
+
         softAssert.assertEquals(jsonStringExpected,jsonStringActual);
         softAssert.assertAll();
+    }
+
+
+    @DataProvider
+    public Object[][] parameterIntTestProvider() {
+
+        User userFive = new User(5,"Chelsey Dietrich", "Kamren", "Lucio_Hettinger@annie.ca",
+                new Address("Skiles Walks", "Suite 351", "Roscoeview", "33263",
+                        new Geo("-31.8129", "62.5342")),"(254)954-1289", "demarco.info",
+                new Company("Keebler LLC", "User-centric fault-tolerant solution", "revolutionize end-to-end systems"));
+
+        return new Object[][]{
+                {userFive, 5}
+        };
     }
 }

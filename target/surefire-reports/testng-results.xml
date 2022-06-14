@@ -2,86 +2,21 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-13T11:09:33 MSK" name="UsersSuite" finished-at="2022-06-13T11:09:34 MSK" duration-ms="415">
+  <suite started-at="2022-06-14T22:28:03 MSK" name="UsersSuite" finished-at="2022-06-14T22:28:03 MSK" duration-ms="856">
     <groups>
     </groups>
-    <test started-at="2022-06-13T11:09:33 MSK" name="CASE5" finished-at="2022-06-13T11:09:33 MSK" duration-ms="272">
+    <test started-at="2022-06-14T22:28:03 MSK" name="CASE5" finished-at="2022-06-14T22:28:03 MSK" duration-ms="522">
       <class name="tests.usersTests.GetResponseUsersTest">
-        <test-method signature="getResponseUsers(int,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.usersTests.GetResponseUsersTest@3c7f66c4]" started-at="2022-06-13T11:09:33 MSK" name="getResponseUsers" finished-at="2022-06-13T11:09:33 MSK" duration-ms="270" status="PASS">
+        <test-method signature="getResponseUsers(pageObjects.user.User,int)[pri:0, instance:tests.usersTests.GetResponseUsersTest@6e171cd7]" started-at="2022-06-14T22:28:03 MSK" name="getResponseUsers" data-provider="parameterIntTestProvider" finished-at="2022-06-14T22:28:03 MSK" duration-ms="507" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[5]]>
+                <![CDATA[pageObjects.user.User@6403a4a5]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Chelsey Dietrich]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Kamren]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[Lucio_Hettinger@annie.ca]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[Skiles Walks]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[Suite 351]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[Roscoeview]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[33263]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[-31.8129]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[62.5342]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[(254)954-1289]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[demarco.info]]>
-              </value>
-            </param>
-            <param index="12">
-              <value>
-                <![CDATA[Keebler LLC]]>
-              </value>
-            </param>
-            <param index="13">
-              <value>
-                <![CDATA[User-centric fault-tolerant solution]]>
-              </value>
-            </param>
-            <param index="14">
-              <value>
-                <![CDATA[revolutionize end-to-end systems]]>
+                <![CDATA[5]]>
               </value>
             </param>
           </params>
@@ -90,9 +25,9 @@
         </test-method> <!-- getResponseUsers -->
       </class> <!-- tests.usersTests.GetResponseUsersTest -->
     </test> <!-- CASE5 -->
-    <test started-at="2022-06-13T11:09:33 MSK" name="CASE6" finished-at="2022-06-13T11:09:34 MSK" duration-ms="141">
+    <test started-at="2022-06-14T22:28:03 MSK" name="CASE6" finished-at="2022-06-14T22:28:03 MSK" duration-ms="334">
       <class name="tests.usersTests.GetResponseFromUsersWithQueryParamTest">
-        <test-method signature="getResponseFromUsersWithQueryParam(java.lang.String,int)[pri:0, instance:tests.usersTests.GetResponseFromUsersWithQueryParamTest@729d991e]" started-at="2022-06-13T11:09:33 MSK" name="getResponseFromUsersWithQueryParam" finished-at="2022-06-13T11:09:34 MSK" duration-ms="140" status="PASS">
+        <test-method signature="getResponseFromUsersWithQueryParam(java.lang.String,int)[pri:0, instance:tests.usersTests.GetResponseFromUsersWithQueryParamTest@1d9b7cce]" started-at="2022-06-14T22:28:03 MSK" name="getResponseFromUsersWithQueryParam" finished-at="2022-06-14T22:28:03 MSK" duration-ms="334" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -111,16 +46,16 @@
       </class> <!-- tests.usersTests.GetResponseFromUsersWithQueryParamTest -->
     </test> <!-- CASE6 -->
   </suite> <!-- UsersSuite -->
-  <suite started-at="2022-06-13T11:09:34 MSK" name="APITests" finished-at="2022-06-13T11:09:34 MSK" duration-ms="0">
+  <suite started-at="2022-06-14T22:28:03 MSK" name="APITests" finished-at="2022-06-14T22:28:03 MSK" duration-ms="0">
     <groups>
     </groups>
   </suite> <!-- APITests -->
-  <suite started-at="2022-06-13T11:09:30 MSK" name="PostsSuite" finished-at="2022-06-13T11:09:33 MSK" duration-ms="3098">
+  <suite started-at="2022-06-14T22:27:59 MSK" name="PostsSuite" finished-at="2022-06-14T22:28:03 MSK" duration-ms="3739">
     <groups>
     </groups>
-    <test started-at="2022-06-13T11:09:30 MSK" name="CASE1" finished-at="2022-06-13T11:09:32 MSK" duration-ms="1989">
+    <test started-at="2022-06-14T22:27:59 MSK" name="CASE1" finished-at="2022-06-14T22:28:01 MSK" duration-ms="2027">
       <class name="tests.postsTests.GetResponseFromPostsTest">
-        <test-method signature="getResponseFromPosts(java.lang.String)[pri:0, instance:tests.postsTests.GetResponseFromPostsTest@73700b80]" started-at="2022-06-13T11:09:30 MSK" name="getResponseFromPosts" finished-at="2022-06-13T11:09:32 MSK" duration-ms="1957" status="PASS">
+        <test-method signature="getResponseFromPosts(java.lang.String)[pri:0, instance:tests.postsTests.GetResponseFromPostsTest@48e4374]" started-at="2022-06-14T22:27:59 MSK" name="getResponseFromPosts" finished-at="2022-06-14T22:28:01 MSK" duration-ms="2011" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -133,9 +68,9 @@
         </test-method> <!-- getResponseFromPosts -->
       </class> <!-- tests.postsTests.GetResponseFromPostsTest -->
     </test> <!-- CASE1 -->
-    <test started-at="2022-06-13T11:09:32 MSK" name="CASE2" finished-at="2022-06-13T11:09:32 MSK" duration-ms="194">
+    <test started-at="2022-06-14T22:28:01 MSK" name="CASE2" finished-at="2022-06-14T22:28:01 MSK" duration-ms="510">
       <class name="tests.postsTests.GetResponseFromPostsWithQueryParamTest">
-        <test-method signature="getResponseFromPostsWithQueryParam(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.postsTests.GetResponseFromPostsWithQueryParamTest@43dac38f]" started-at="2022-06-13T11:09:32 MSK" name="getResponseFromPostsWithQueryParam" finished-at="2022-06-13T11:09:32 MSK" duration-ms="191" status="PASS">
+        <test-method signature="getResponseFromPostsWithQueryParam(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:tests.postsTests.GetResponseFromPostsWithQueryParamTest@619713e5]" started-at="2022-06-14T22:28:01 MSK" name="getResponseFromPostsWithQueryParam" finished-at="2022-06-14T22:28:01 MSK" duration-ms="510" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -178,9 +113,9 @@
         </test-method> <!-- getResponseFromPostsWithQueryParam -->
       </class> <!-- tests.postsTests.GetResponseFromPostsWithQueryParamTest -->
     </test> <!-- CASE2 -->
-    <test started-at="2022-06-13T11:09:32 MSK" name="CASE3" finished-at="2022-06-13T11:09:33 MSK" duration-ms="144">
+    <test started-at="2022-06-14T22:28:01 MSK" name="CASE3" finished-at="2022-06-14T22:28:02 MSK" duration-ms="396">
       <class name="tests.postsTests.GetResponseFromPostsWithIncorrectDataTest">
-        <test-method signature="getResponseFromPostsWithIncorrectData(java.lang.String)[pri:0, instance:tests.postsTests.GetResponseFromPostsWithIncorrectDataTest@54bff557]" started-at="2022-06-13T11:09:32 MSK" name="getResponseFromPostsWithIncorrectData" finished-at="2022-06-13T11:09:33 MSK" duration-ms="144" status="PASS">
+        <test-method signature="getResponseFromPostsWithIncorrectData(java.lang.String)[pri:0, instance:tests.postsTests.GetResponseFromPostsWithIncorrectDataTest@291ae]" started-at="2022-06-14T22:28:01 MSK" name="getResponseFromPostsWithIncorrectData" finished-at="2022-06-14T22:28:02 MSK" duration-ms="396" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -193,9 +128,9 @@
         </test-method> <!-- getResponseFromPostsWithIncorrectData -->
       </class> <!-- tests.postsTests.GetResponseFromPostsWithIncorrectDataTest -->
     </test> <!-- CASE3 -->
-    <test started-at="2022-06-13T11:09:33 MSK" name="CASE4" finished-at="2022-06-13T11:09:33 MSK" duration-ms="702">
+    <test started-at="2022-06-14T22:28:02 MSK" name="CASE4" finished-at="2022-06-14T22:28:03 MSK" duration-ms="775">
       <class name="tests.postsTests.PostDataTest">
-        <test-method signature="postAdd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,int)[pri:0, instance:tests.postsTests.PostDataTest@37d4349f]" started-at="2022-06-13T11:09:33 MSK" name="postAdd" finished-at="2022-06-13T11:09:33 MSK" duration-ms="702" status="PASS">
+        <test-method signature="postAdd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,int,int,int)[pri:0, instance:tests.postsTests.PostDataTest@1ea9f6af]" started-at="2022-06-14T22:28:02 MSK" name="postAdd" finished-at="2022-06-14T22:28:03 MSK" duration-ms="775" status="PASS">
           <params>
             <param index="0">
               <value>
