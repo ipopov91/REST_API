@@ -10,7 +10,6 @@
         </classes>
     </test>
     <test name="CASE6">
-        <parameter name="idValue" value="5"/>
         <classes>
             <class name="tests.usersTests.GetResponseFromUsersWithQueryParamTest"/>
         </classes>
