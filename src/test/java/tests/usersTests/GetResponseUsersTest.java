@@ -24,13 +24,12 @@ import static utils.Specifications.USER_PATH;
 public class GetResponseUsersTest {
 
     @Test(dataProvider = "parameterTestProvider")
-    public void getResponseUsers(User userFive, int idValue) throws IOException {
+    public void getResponseUsers(User user, int idValue) throws IOException {
 
         SoftAssert softAssert = new SoftAssert();
         Specifications.installSpecification(Specifications.requestSpec(), Specifications.responseSpecificationOk());
-
         ObjectMapper mapper = new ObjectMapper();
-        String jsonStringExpected = mapper.writeValueAsString(userFive);
+        String jsonStringExpected = mapper.writeValueAsString(user);
 
         List<User> res = given()
                 .when()
@@ -39,10 +38,9 @@ public class GetResponseUsersTest {
                 .extract().jsonPath().getList("", User.class);
 
         List<User> neededUser = res.stream().filter(x->x.getId().equals(idValue)).collect(Collectors.toList());
-
         String jsonStringActual = mapper.writeValueAsString(neededUser.get(0));
 
-        softAssert.assertEquals(jsonStringExpected,jsonStringActual);
+        softAssert.assertEquals(jsonStringActual,jsonStringExpected);
         softAssert.assertAll();
     }
 
